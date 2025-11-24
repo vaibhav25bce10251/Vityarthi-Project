@@ -1,8 +1,8 @@
 #A.N.A.N.T — Advanced Neural Assistant for Natural Tasks (an AI driven helpful desktop voice assistant)
 ANANT is a voice-controlled assistant built in Python. It has two modes: Desktop Mode for system tasks and AI Mode for conversational responses using the Groq API. It takes voice input, processes commands, and speaks the output using Windows SAPI.
 
-Features
-Desktop Mode
+#Features
+% Desktop Mode
 
 Open websites such as YouTube, Wikipedia, Instagram, Chess.com, Google
 
@@ -14,7 +14,7 @@ Tell the current system time
 
 Respond to voice commands without typing
 
-AI Mode
+% AI Mode
 
 Conversational responses powered by Groq’s language model
 
@@ -30,13 +30,13 @@ SpeechRecognition for listening
 
 SAPI (win32com) for voice output
 
-Requirements
+% Requirements
 
 Python 3
 
 Windows OS (SAPI voice required)
 
-Python Dependencies:
+% Python Dependencies:
 speech_recognition
 pyaudio
 groq
@@ -53,12 +53,13 @@ Install dependencies:
 pip install -r requirements.txt
 
 Add your Groq API key inside the script:
-client = Groq(api_key="YOUR_API_KEY_HERE")
+client = Groq(api_key="your generated key----GITHUB not allowing me to mention mine here")
+### website for generating api key = https://console.groq.com
 
 Run the assistant:
 python anant.py
 
-How ANANT Works
+% How ANANT Works
 
 Takes audio input through the microphone
 
