@@ -1,1 +1,117 @@
-nhh
+#A.N.A.N.T — Advanced Neural Assistant for Natural Tasks (an AI driven helpful desktop voice assistant)
+ANANT is a voice-controlled assistant built in Python. It has two modes: Desktop Mode for system tasks and AI Mode for conversational responses using the Groq API. It takes voice input, processes commands, and speaks the output using Windows SAPI.
+
+Features
+Desktop Mode
+
+Open websites such as YouTube, Wikipedia, Instagram, Chess.com, Google
+
+Launch Windows apps like Valorant, Aim Labs, Hollow Knight, File Explorer, and Browser
+
+Play downloaded songs or open Spotify
+
+Tell the current system time
+
+Respond to voice commands without typing
+
+AI Mode
+
+Conversational responses powered by Groq’s language model
+
+Voice input and spoken output
+
+Multi-turn dialogue
+
+Switch back to Desktop Mode at any time
+
+Voice Interaction
+
+SpeechRecognition for listening
+
+SAPI (win32com) for voice output
+
+Requirements
+
+Python 3
+
+Windows OS (SAPI voice required)
+
+Python Dependencies:
+speech_recognition
+pyaudio
+groq
+pywin32
+
+Installation
+
+Clone the repository:
+git clone https://github.com/yourusername/ANANT.git
+
+cd ANANT
+
+Install dependencies:
+pip install -r requirements.txt
+
+Add your Groq API key inside the script:
+client = Groq(api_key="YOUR_API_KEY_HERE")
+
+Run the assistant:
+python anant.py
+
+How ANANT Works
+
+Takes audio input through the microphone
+
+Converts speech to text
+
+Checks if the command belongs to Desktop Mode
+
+If Desktop Mode task → performs system action
+
+If AI Mode → sends the query to the Groq model
+
+Speaks the response using Windows SAPI
+
+Example Commands
+Desktop Mode
+
+Open YouTube
+
+Open Wikipedia
+
+Open Valorant
+
+Open File Explorer
+
+Open Browser
+
+Play Music
+
+What is the time
+
+AI Mode
+
+Say "AI Mode" to activate
+
+Ask any conversational question
+
+Say "Exit AI Mode" to return to desktop commands
+
+Project Structure
+
+ANANT/
+anant.py
+README.md
+requirements.txt
+
+Future Improvements
+
+Hotword activation
+
+GUI interface
+
+Streaming voice responses
+
+Offline fallback for simple commands
+
+More natural command understanding
